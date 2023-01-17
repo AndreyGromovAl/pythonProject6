@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+        function add_input(){
+            var inputs = $('.inputs input[type="text"]');
+            var new_id = inputs.length+1;
+            $('.inputs').append('<input id="id-'+new_id+'" name="name[]" />');
+        }
+        </script>
+    <title>Bootstrap demo</title>
+    </head>
+    <body>
+        <form id="Form">
+            <div class="inputs">
+                <input id="id-1" name="name[]" />
+                <input id="id-2" name="name[]" />
+            </div>
+            <input type="button" onclick="add_input()" value="Добавить" />
+        </form> 
+    </body>
+</html>
